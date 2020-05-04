@@ -127,3 +127,12 @@ const newNav = document.querySelectorAll("header nav a");
 newNav.forEach((value) => {
   value.style.color = 'green';
 })
+
+
+//Stretch
+
+ctaBtn.addEventListener("click", changeBG);
+
+function changeBG() {
+  document.querySelector('body').style.background = '#BEEEFC';
+}
