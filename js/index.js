@@ -105,3 +105,25 @@ contactP[2].textContent = siteContent[`contact`]["email"];
 
 const footer = document.querySelector("footer p");
 footer.textContent = siteContent[`footer`][`copyright`];
+
+// Adding new nav items
+
+const nav = document.querySelector('nav');
+
+const Home = document.createElement('a');
+Home.href = "index.html";
+Home.textContent = "Home";
+
+const News = document.createElement('a');
+News.href = "https://news.google.com/"
+News.textContent = "News";
+
+nav.prepend(Home);
+nav.append(News);
+
+// Change nav color to green
+
+const newNav = document.querySelectorAll("header nav a");
+newNav.forEach((value) => {
+  value.style.color = 'green';
+})
